@@ -1,3 +1,7 @@
+<?php 
+    $autor = "Abelardo Aqui";
+    $año = "2019";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +19,9 @@
     <header>
         <h1>
             <strong>Bienvenido a SASI</strong> <br>
-            <small>Sistema Administrativo de Servicios Informáticos &reg;</small>
+            
         </h1>
+        <h3>Sistema Administrativo de Servicios Informáticos &reg;</h3>
     </header>
     <main>
         <section class="login">
@@ -33,6 +38,10 @@
                 </fieldset>
             </form>
         </section>
+
+        <footer>
+            <h3 class="autor"><?php echo $autor;?> &copy; <?php echo $año?></h3>
+        </footer>
     </main>
 </body>
 </html>
