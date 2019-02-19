@@ -30,7 +30,7 @@
         <section class="login">
             <form method="post">
                 <fieldset>
-                    <legend><h2>Ingreso</h2></legend>
+                    <legend><h2>Ingresos</h2></legend>
                     <label for="usuario"><strong>Usuario:</strong> </label>
                     <input id="usuario" name="txtUsuario" type="text" placeholder="Nombre de usuario" autocomplete="off" required>
                     <br><br>

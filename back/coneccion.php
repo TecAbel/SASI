@@ -6,7 +6,7 @@
         $connected = false;
         try {
             $mysqli = new mysqli($servidor,$usuario,$password,$base);
-            header('Location: estado.html');
+            header('Location: frmClientes.php');
         }
           catch (Exception $e) {
             echo 'Error: '.$e ->getMessage();
