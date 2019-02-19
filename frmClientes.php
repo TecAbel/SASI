@@ -1,4 +1,16 @@
+<?php
+    session_start();
+    $varsesion = $_SESSION['usuario'];
 
+    if($varsesion == null || $varsesion == ''){
+        echo "no ha iniciado sesion";
+        //die(); //mata la aplicacion
+        header('Location: index.php');
+    }
+    else{
+        echo $varsesion;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +22,7 @@
 <body>
     <header>
         <h1>Formulario de clientes</h1>
+        <a href="back/cerrarSesion.php">Cerrar sesión</a>
     </header>
     <section class="registros">
         <form method="POST">
@@ -34,7 +47,7 @@
                 <input type="text" id="apMat" placeholder="Apellido Mat" required>
                 <br> <br>
                 <label for="tel">Teléfono: </label>
-                <input type="text" id="tel" placeholder="máx 13" max="13" min="10" required>
+                <input type="text" id="tel" placeholder="máx 13" required>
                 <br> <br>
                 <label for="fat">Factuar a: </label>
                 <input type="text" id="fact" placeholder="Opcional">

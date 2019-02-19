@@ -2,8 +2,7 @@
     require ('back/autor.php');
     require ('back/coneccion.php');
     /*Obteniendo variables, solo se usa name*/
-    
-    
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +51,7 @@
                         $pass = $_POST['txtPassword'];
                         $msg = "Nombre: $usuario Contraseña: $pass";
                         inicio($usuario,$pass);
+                        sesion($usuario);
                     }
                 ?>
             </h2>
