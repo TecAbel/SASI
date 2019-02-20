@@ -11,7 +11,9 @@ label, input,p,a{
     font-family: 'Raleway', sans-serif;
 }
 fieldset{
+    margin: auto;
     background: #849ea2 ;
+    width: 75%;
 }
 
 body{
@@ -19,9 +21,13 @@ body{
     color: white;
 }
 
-fieldset label, fieldset input, fieldset button{
+fieldset label, fieldset input, fieldset button, fieldset select{
+    border-radius: 5px;
     display: block;
     display: flex;
     justify-content: center;
     margin: auto;
+}
+fieldset input.limpiar, fieldset input.enviar{
+    display: inline;
 }

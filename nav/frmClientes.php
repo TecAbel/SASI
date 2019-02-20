@@ -35,43 +35,43 @@
             </ul>
         </nav>
     </header>
-    <h1>Formulario de clientes</h1>
     <section class="registros">
         <form method="POST">
+        <h1>Formulario de clientes</h1>
             <fieldset>
                 <legend><h3>Información del cliente</h3></legend>
                 <label for="gc_cli">Identificación: </label>
                 <input type="text" id="gc_cli" placeholder="CI19XXXX" required>
-                <br> <br>
+                <br>
                 <label for="cl_tipo_cliente">Tipo de cliente:</label>
                 <select name="" id="cl_tipo_cliente" required>
                     <option value="1">Empresa</option>
                     <option value="0">Físico</option>
                 </select>
-                <br> <br>
+                <br> 
                 <label for="nombres">Nombre(s): </label>
                 <input type="text" id="nombres" placeholder="Nombres" required>
-                <br> <br>
+                <br>
                 <label for="apPat">Apellido paterno: </label>
                 <input type="text" id="apPat" placeholder="Apellido Pat" required>
-                <br> <br>
+                <br> 
                 <label for="apMat">Apellido paterno: </label>
                 <input type="text" id="apMat" placeholder="Apellido Mat" required>
-                <br> <br>
+                <br>
                 <label for="tel">Teléfono: </label>
                 <input type="text" id="tel" placeholder="máx 13" required>
-                <br> <br>
+                <br>
                 <label for="fat">Factuar a: </label>
                 <input type="text" id="fact" placeholder="Opcional">
-                <br> <br>
+                <br>
                 <label for="direccion">Dirección: </label>
                 <input type="text" id="direccion" placeholder="Dirección completa" required>
-                <br> <br>
+                <br>
                 <label for="rfc">RFC: </label>
                 <input type="text" id="rfc" placeholder="Opcional">
-                <br> <br>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
+                <br>
+                <input class="limpiar" type="reset" value="Limpiar">
+                <input class="enviar" type="submit" value="Enviar">
             </fieldset>
         </form>
     </section>
