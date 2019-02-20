@@ -17,20 +17,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="../css/frmClientes.css">
+    <link rel="stylesheet" href="../css/estiloheader.css">
     <title>SASI | Registro Clientes</title>
 </head>
 <body>
     <header>
         <nav class="estado">
             <ul>
-                <li class="msgEstado"><?php echo "Conectado como: $estado"; ?></li>
+                <li class="msgEstado"><?php echo "U: $estado"; ?></li>
+                <span><li><a href="menu.php">Menú</a></li></span>
                 <span><li><a href="../back/cerrarSesion.php">Cerrar sesión</a></li></span>
             </ul>
         </nav>
     </header>
-    <section class="registros">
     <h1>Formulario de clientes</h1>
+    <section class="registros">
         <form method="POST">
             <fieldset>
                 <legend><h3>Información del cliente</h3></legend>

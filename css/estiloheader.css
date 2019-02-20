@@ -1,0 +1,27 @@
+header{
+    padding-left: -4px; 
+    background: #353535;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 80%;
+}
+
+nav.estado  ul {
+    list-style: none;
+}
+
+nav.estado  li, nav.estado a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.estado ul li{
+    display: inline;
+    position: relative;
+    text-transform: uppercase;
+}
+nav.estado span{
+    padding-left: 40px;;
+}
