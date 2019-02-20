@@ -11,7 +11,7 @@
             $mysqli = new mysqli($servidor,$usuario,$password,$base);
             //header('Location: frmClientes.php');
             sesion($usuario);
-            header('Location: frmClientes.php');
+            header('Location: nav/frmClientes.php');
         }
           catch (Exception $e) {
             //echo 'Error: '.$e ->getMessage();

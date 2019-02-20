@@ -8,7 +8,7 @@
         header('Location: index.php');
     }
     else{
-        echo $varsesion;
+        $estado = $varsesion;
     }
 ?>
 <!DOCTYPE html>
@@ -17,14 +17,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SASI | Menú</title>
+    <link rel="stylesheet" href="../css/frmClientes.css">
+    <title>SASI | Registro Clientes</title>
 </head>
 <body>
     <header>
-        <h1>Formulario de clientes</h1>
-        <a href="back/cerrarSesion.php">Cerrar sesión</a>
+        <nav class="estado">
+            <ul>
+                <li class="msgEstado"><?php echo "Conectado como: $estado"; ?></li>
+                <span><li><a href="../back/cerrarSesion.php">Cerrar sesión</a></li></span>
+            </ul>
+        </nav>
     </header>
     <section class="registros">
+    <h1>Formulario de clientes</h1>
         <form method="POST">
             <fieldset>
                 <legend><h3>Información del cliente</h3></legend>

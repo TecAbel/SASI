@@ -41,20 +41,22 @@
                 </fieldset>
             </form>
         </section>
-
-        <section class="pruebas">
-            <h2>
-                <?php
-                     //funcion de coneccion
-                     if(isset($_POST['btnEnviar'])){
-                        $usuario = $_POST['txtUsuario'];
-                        $pass = $_POST['txtPassword'];
-                        $msg = "Nombre: $usuario Contraseña: $pass";
-                        inicio($usuario,$pass);
-                        sesion($usuario);
-                    }
-                ?>
-            </h2>
+        <br>
+        <section class="resultados">
+            <div>
+                <span class="mensaje">
+                    <?php
+                            //funcion de coneccion
+                            if(isset($_POST['btnEnviar'])){
+                            $usuario = $_POST['txtUsuario'];
+                            $pass = $_POST['txtPassword'];
+                            $msg = "Nombre: $usuario Contraseña: $pass";
+                            inicio($usuario,$pass);
+                            sesion($usuario);
+                        }
+                    ?>
+                </span>
+            </div>
         </section>
 
         <footer>
