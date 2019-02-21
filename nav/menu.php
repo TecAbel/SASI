@@ -37,11 +37,13 @@
     </header>
     <section class="forms">
         <h1>Menú de opciones</h1>
-        <div class="clientes">
-            <a href="frmClientes.php">Registro de clientes</a>
-        </div>
-        <div class="">
-
+        <div class="contenedor">
+            <div class="clientes" for="clientes">
+                <a href="frmClientes.php" id="clientes">Registro de clientes</a>
+            </div>
+            <div class="tecnicos">
+                <a href="frmTecnicos.php">Registros de técnicos</a>
+            </div>
         </div>
     </section>
 </body>

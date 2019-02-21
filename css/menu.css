@@ -2,3 +2,28 @@ section.forms{
     padding-top: 40px;
 }
 
+a{
+	text-decoration: none;
+}
+div.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 10px;
+	background: #353535;
+	width: 80%;
+	margin: auto;
+	padding: 2%;
+}
+div.contenedor div{
+	text-align: center;
+	background: rgb(242, 242, 242);
+    border-radius: 10px;
+    width: 46%;
+	padding-left: 5px;
+}
+div.contenedor div a{
+	color: black;
+	display: block;
+	margin: auto;
+}
