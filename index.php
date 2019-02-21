@@ -64,5 +64,10 @@
             <h3 class="autor"><?php echo $autor;?> &copy; <?php echo $año?></h3>
         </footer>
     </main>
+
+    <footer class="">
+        
+    </footer>
+
 </body>
 </html>
