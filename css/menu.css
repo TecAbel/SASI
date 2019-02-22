@@ -7,23 +7,34 @@ a{
 }
 div.contenedor{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 10px;
 	background: #353535;
-	width: 80%;
-	margin: auto;
-	padding: 2%;
+	width: 100%;
+	margin: 5px;
+	padding: 1%;
 }
 div.contenedor div{
 	text-align: center;
 	background: rgb(242, 242, 242);
     border-radius: 10px;
-    width: 46%;
-	padding-left: 5px;
+    margin: 5px;
 }
 div.contenedor div a{
 	color: black;
 	display: block;
 	margin: auto;
+}
+
+.contenedorPrincipal{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.izq div, .izq a{
+	height: 48%;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }

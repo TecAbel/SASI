@@ -32,6 +32,7 @@
                 <li class="msgEstado"><?php echo "U: $estado"; ?></li>
                 <span><li><a href="menu.php">Menú</a></li></span>
                 <span><li><a href="../back/cerrarSesion.php">Cerrar sesión</a></li></span>
+                <span><li><a href="">Contacto</a></li></span>
             </ul>
         </nav>
     </header>

@@ -13,7 +13,7 @@ label, input,p,a{
 fieldset{
     margin: auto;
     background: #849ea2 ;
-    width: 75%;
+    width: 90%;
 }
 
 body{
@@ -28,6 +28,7 @@ fieldset label, fieldset input, fieldset button, fieldset select{
     justify-content: center;
     margin: auto;
 }
+
 fieldset input.limpiar, fieldset input.enviar{
     display: inline;
 }

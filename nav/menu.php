@@ -32,19 +32,39 @@
                 <li class="msgEstado"><?php echo "U: $estado"; ?></li>
                 <span><li><a href="menu.php">Menú</a></li></span>
                 <span><li><a href="../back/cerrarSesion.php">Cerrar sesión</a></li></span>
+                <span><li><a href="">Contacto</a></li></span>
             </ul>
         </nav>
     </header>
     <section class="forms">
         <h1>Menú de opciones</h1>
-        <div class="contenedor">
-            <div class="clientes" for="clientes">
-                <a href="frmClientes.php" id="clientes">Registro de clientes</a>
+        <fieldset>
+            <div class="contenedorPrincipal">
+                <div class="contenedor izq">
+                    <div class="clientes" for="clientes">
+                        <a href="frmClientes.php" id="clientes">Registro de <br> clientes</a>
+                    </div>
+                    <div class="tecnicos">
+                        <a href="frmTecnicos.php">Registro de <br>equipos</a>
+                    </div>
+                </div>
+                <div class="contenedor">
+                    <div>
+                        <a href="">Registro de <br> servicios</a>
+                    </div>
+                    <div>
+                        <a href="">Registro de <br> Técnicos</a>
+                    </div>
+                    <div>
+                        <a href="">Registro de <br> Ticket</a>
+                    </div>
+                </div>
             </div>
-            <div class="tecnicos">
-                <a href="frmTecnicos.php">Registros de técnicos</a>
-            </div>
-        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            
+        </fieldset>
     </section>
 </body>
 </html>
