@@ -101,8 +101,8 @@
 	    				<textarea id="notas" name="notas" placeholder="comportamiento, detalles físicos, etc."></textarea>
 	    				<br>
 	    				<span class="botones">
-	    					<input class="limpiar" type="reset" value="Limpiar">
-                            <input class="enviar" name="enviar" type="submit" value="Enviar">
+	    					<input class="limpiar boton" type="reset" value="Limpiar">
+                            <input class="enviar boton" name="btnEnviar" type="submit" value="Enviar">
 	    				</span>
 	    			</div>
 	    		</div>

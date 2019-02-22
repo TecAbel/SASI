@@ -62,8 +62,8 @@
                         <input type="text" id="rfc" placeholder="Opcional">
                         <br>
                         <span class="botones">
-                            <input class="limpiar" type="reset" value="Limpiar">
-                            <input class="enviar" type="submit" value="Enviar">
+                            <input class="limpiar boton" type="reset" value="Limpiar">
+                            <input class="enviar boton" name="btnEnviar" type="submit" value="Enviar">
                         </span>
                     </div>
                 </div>
