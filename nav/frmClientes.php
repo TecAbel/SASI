@@ -38,8 +38,8 @@
         </nav>
     </header>
     <section class="registros">
-        <form method="POST">
-        <h1>Formulario de clientes</h1>
+         <h1>Formulario de clientes</h1>
+        <form method="POST">       
             <fieldset>
                 <legend><h3>Información del cliente</h3></legend>
                 <div class="contenedorPrincipal">

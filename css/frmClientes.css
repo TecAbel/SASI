@@ -4,7 +4,7 @@ section.registros{
     padding-top: 40px;
 }
 
-span.botones{
+.botones{
 	display: block;
 	margin: auto;
 	display: inline;
