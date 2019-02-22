@@ -62,9 +62,6 @@
             </div>
         </fieldset>
         <br>
-        <fieldset>
-            
-        </fieldset>
     </section>
 </body>
 </html>

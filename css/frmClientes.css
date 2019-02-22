@@ -3,3 +3,18 @@
 section.registros{
     padding-top: 40px;
 }
+
+textarea{
+	width: 95%;
+	margin: auto;
+	border-radius: 10px;
+	height: 90px;
+}
+
+.botones{
+	margin: auto;
+}
+
+fieldset{
+	height: 400px;
+}

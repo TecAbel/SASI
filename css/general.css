@@ -7,7 +7,7 @@ h1,h2,h3,h4{
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
 }
-label, input,p,a{
+label, input,p,a,textarea{
     font-family: 'Raleway', sans-serif;
 }
 fieldset{
