@@ -49,11 +49,10 @@
                     <?php
                             //funcion de coneccion
                             if(isset($_POST['btnEnviar'])){
-                            $usuario = $_POST['txtUsuario'];
+                            $_SESSION['usuario'] = $_POST['txtUsuario'];
+                            $usuario = $_SESSION['usuario'];
                             $pass = $_POST['txtPassword'];
-                            $msg = "Nombre: $usuario Contraseña: $pass";
                             inicio($usuario,$pass);
-                            sesion($usuario);
                         }
                     ?>
                 </span>

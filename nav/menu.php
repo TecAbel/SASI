@@ -1,13 +1,8 @@
 <?php
-    
+    require("../back/recursos.php");
     session_start();
     $varsesion = $_SESSION['usuario'];
-    if($varsesion == null || $varsesion == ''){
-        header('Location: ../index.php');
-    }
-    else{
-        $estado = $varsesion;
-    }
+    validarInicio($varsesion);
 ?>
 
 <!DOCTYPE html>
@@ -26,16 +21,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="estado">
-            <ul>
-                <li class="msgEstado"><?php echo "U: $estado"; ?></li>
-                <span><li><a href="menu.php">Menú</a></li></span>
-                <span><li><a href="../back/cerrarSesion.php">Cerrar sesión</a></li></span>
-                <span><li><a href="">Contacto</a></li></span>
-            </ul>
-        </nav>
-    </header>
+    <?php getHeader($varsesion); ?>
     <section class="forms">
         <h1>Menú de opciones</h1>
         <fieldset>

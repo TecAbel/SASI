@@ -1,15 +1,8 @@
 <?php
+    require("../back/recursos.php");
     session_start();
     $varsesion = $_SESSION['usuario'];
-
-    if($varsesion == null || $varsesion == ''){
-        echo "no ha iniciado sesion";
-        //die(); //mata la aplicacion
-        header('Location: index.php');
-    }
-    else{
-        $estado = $varsesion;
-    }
+    validarInicio($varsesion);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,16 +20,7 @@
     <title>SASI | Registro Clientes</title>
 </head>
 <body>
-    <header>
-        <nav class="estado">
-            <ul>
-                <li class="msgEstado"><?php echo "U: $estado"; ?></li>
-                <span><li><a href="menu.php">Menú</a></li></span>
-                <span><li><a href="../back/cerrarSesion.php">Cerrar sesión</a></li></span>
-                <span><li><a href="">Contacto</a></li></span>
-            </ul>
-        </nav>
-    </header>
+    <?php getHeader($varsesion); ?>
     <section class="registros">
          <h1>Formulario de clientes</h1>
         <form method="POST">       
