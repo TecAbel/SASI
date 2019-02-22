@@ -45,7 +45,7 @@
                         <a href="frmClientes.php" id="clientes">Registro de <br> clientes</a>
                     </div>
                     <div class="tecnicos">
-                        <a href="frmTecnicos.php">Registro de <br>equipos</a>
+                        <a href="frmEquipos.php">Registro de <br>equipos</a>
                     </div>
                 </div>
                 <div class="contenedor">

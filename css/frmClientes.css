@@ -4,17 +4,12 @@ section.registros{
     padding-top: 40px;
 }
 
-textarea{
-	width: 95%;
+span.botones{
+	display: block;
 	margin: auto;
-	border-radius: 10px;
-	height: 90px;
-}
-
-.botones{
-	margin: auto;
+	display: inline;
 }
 
 fieldset{
-	height: 400px;
+	height: 500px;
 }

@@ -32,3 +32,10 @@ fieldset label, fieldset input, fieldset button, fieldset select{
 fieldset input.limpiar, fieldset input.enviar{
     display: inline;
 }
+
+textarea{
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+    height: 90px;
+}
