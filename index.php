@@ -19,12 +19,14 @@
     <title>SASI</title>
 </head>
 <body>
-    <header>
-        <h1>
+    <header class="presentacion">
+        <div>
+            <h1>
             <strong>Bienvenido a SASI</strong> <br>
             
-        </h1>
-        <h3>Sistema Administrativo de Servicios Informáticos &reg;</h3>
+            </h1>
+            <h3>Sistema Administrativo de Servicios Informáticos &reg;</h3>
+        </div>
     </header>
     <main>
         <section class="login">
@@ -38,7 +40,7 @@
                     <input id="password" name="txtPassword" type="password" placeholder="Contraseña" autocomplete="off" required>
                     <br><br>
                     <!-- <input type="submit" value="Ingresar" name="btnEnviar" id="btnEnviar"> -->
-                    <button type="submit" name="btnEnviar" >Ingresar</button>
+                    <button class="boton" type="submit" name="btnEnviar" >Ingresar</button>
                 </fieldset>
             </form>
         </section>
@@ -58,14 +60,12 @@
                 </span>
             </div>
         </section>
-
-        <footer>
-            <h3 class="autor"><?php echo $autor;?> &copy; <?php echo $año?></h3>
-        </footer>
     </main>
 
-    <footer class="">
-        
+    <footer>
+        <div>
+            <h3 class="autor"><?php echo $autor;?> &copy; <?php echo $año?></h3>
+        </div>
     </footer>
 
 </body>

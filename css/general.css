@@ -39,3 +39,20 @@ textarea{
     border-radius: 10px;
     height: 90px;
 }
+footer div{
+    background: #353535;
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.boton{
+    color:white;
+    background:#638cb5;
+    font-weight:bold;
+    font-size: 150%;
+}

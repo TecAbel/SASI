@@ -39,3 +39,16 @@ label, input{
     justify-content: center;
     margin: auto;
 }
+
+.presentacion{
+    background: #353535;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.login{
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
