@@ -1,6 +1,6 @@
 <?php 
     require ('back/autor.php');
-    require ('back/coneccion.php');
+    require ('back/recursos.php');
     /*Obteniendo variables, solo se usa name*/
     session_start();
 ?>
