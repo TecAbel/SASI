@@ -18,27 +18,7 @@ label, input,p{
 label, input{
     font-size: 130%;
 }
-.mensaje{
-    font-size: 200%;
-    text-align: center;
-    color: red;
-    text-transform: uppercase;
-    display: block;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
 
-.resultados div{
-    background: #F5A9A9;
-    border: 1px, double, red;
-    border-radius: 20px;
-    width: 60%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
 
 .presentacion{
     background: #353535;

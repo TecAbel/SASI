@@ -52,8 +52,9 @@
                             //funcion de coneccion
                             if(isset($_POST['btnEnviar'])){
                             $_SESSION['usuario'] = $_POST['txtUsuario'];
+                            $_SESSION['password'] = $_POST['txtPassword'];
                             $usuario = $_SESSION['usuario'];
-                            $pass = $_POST['txtPassword'];
+                            $pass = $_SESSION['password'];
                             inicio($usuario,$pass);
                         }
                     ?>

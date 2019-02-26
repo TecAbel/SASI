@@ -38,6 +38,10 @@ textarea{
     margin: auto;
     border-radius: 10px;
     height: 90px;
+    text-transform: uppercase;
+}
+input{
+    text-transform: uppercase;
 }
 footer div{
     background: #353535;
@@ -55,4 +59,26 @@ footer div{
     background:#638cb5;
     font-weight:bold;
     font-size: 120%;
+}
+
+.mensaje{
+    font-size: 200%;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.resultados div{
+    background: #F5A9A9;
+    border: 1px, double, red;
+    border-radius: 20px;
+    width: 60%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }

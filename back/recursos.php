@@ -3,19 +3,20 @@
 
 	$servidor="127.0.0.1";
     $base="sasi";
+    $connG;
     mysqli_report(MYSQLI_REPORT_STRICT); //necesario
     function inicio($usuario,$password){
         try {
-
             //$conn = new mysqli($servidor,$usuario,$password,$base);
-            $conn = mysqli_connect($servidor, $usuario, $password, $base);
+            $conn = mysqli_connect($servidor, $usuario, $password, $GLOBALS['base']);
             if (!$conn) {
       			die("Conexión falló: " . mysqli_connect_error());
+      			$conexion = $conn;
 			}
 			else{
+				$GLOBALS['connG'] = $conn;
 				header('Location: nav/menu.php');
 			}
-            
         }
           catch (Exception $e) {
             //echo 'Error: '.$e ->getMessage();
@@ -26,7 +27,7 @@
     }
 
     function cerrarConexion(){
-    	mysqli_close($conn);
+    	mysqli_close($conexion);
     }
 
     //HEADER
@@ -45,7 +46,7 @@
 		    </header>
 		";
 	}
-	
+
 	//Login
 
 	function validarInicio($sesion){
@@ -54,8 +55,20 @@
         //die(); //mata la aplicacion
         header('Location: ../index.php');
 	    }
-	    else{
-	        $estado = $varsesion;
-	    }
+	}
+
+	//Regsitros
+
+	//Clientes
+
+	function registroCliente($contraseña,$usuario,$id,$tipo,$nombres,$apPat,$apMat,$tel,$facta,$dir,$rfc){
+		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$sql = "INSERT INTO clientes (cl_gc_cli,cl_tipo_cliente,cl_nom,cl_ap_pat,cl_ap_mat,cl_tel,cl_fac_a,cl_dir,cl_rfc) VALUES ('$id','$tipo','$nombres','$apPat','$apMat','$tel','$facta' ,'$dir','$rfc');";
+		if (mysqli_query($conn,$sql)) {
+			echo "Registro exitoso";
+		}
+		else{
+			echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+		}
 	}
  ?>
