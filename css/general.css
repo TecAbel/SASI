@@ -58,27 +58,38 @@ footer div{
     color:white;
     background:#638cb5;
     font-weight:bold;
-    font-size: 120%;
+    font-size: 100%;
 }
 
 .mensaje{
-    font-size: 200%;
+    font-size: 120%;
     text-align: center;
-    color: red;
     text-transform: uppercase;
     display: block;
     display: flex;
     justify-content: center;
     margin: auto;
+    font-weight: bold;
 }
 
+.exito{
+    color: green;
+}
+
+.fail{
+    color: red;
+}
+
+
 .resultados div{
-    background: #F5A9A9;
-    border: 1px, double, red;
+    border: 1px, double, black;
     border-radius: 20px;
     width: 60%;
     display: block;
     display: flex;
     justify-content: center;
     margin: auto;
+    background: white;
 }
+
+

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/frmClientes.css">
     <link rel="stylesheet" href="../css/estiloheader.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
     <title>SASI | Registro Clientes</title>
 </head>
 <body>
@@ -25,9 +27,9 @@
     <section class="registros">
          <h1>Formulario de clientes</h1>
         <form method="POST">
-            <section class="">
+            <section class="resultados">
                 <div>
-                    <span class="">
+                    <span class="mensaje">
                         <?php 
                         if(isset($_POST['btnEnviar'])){
                             //inicializar variables
@@ -40,11 +42,10 @@
                             $factA = $_POST['txt_Fact_a'];
                             $direccion = $_POST['txt_Direccion'];
                             $rfc = $_POST['txt_RFC'];
-                            
                             //llama función
                             registroCliente($passSesion,$varsesion,$gc_cli,$tipoCliente,$nombres,$apPat,$apMat,$tel,$factA,$direccion,$rfc);
-                        }
-                     ?>  
+                            }
+                        ?>  
                     </span>
                 </div>
             </section>    
@@ -53,7 +54,7 @@
                 <div class="contenedorPrincipal">
                     <div class="contenedor izq">
                         <label for="gc_cli">Identificación: </label>
-                        <input type="text" id="gc_cli" placeholder="CI19XXXX" name="txt_gc_cli" required>
+                        <input type="text" id="gc_cli" placeholder="CI19XXX" name="txt_gc_cli" required>
                         <br>
                         <label for="cl_tipo_cliente">Tipo de cliente:</label>
                         <select name="txt_cl_tipo_cliente" id="cl_tipo_cliente" required>

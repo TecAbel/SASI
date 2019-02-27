@@ -20,7 +20,7 @@
         }
           catch (Exception $e) {
             //echo 'Error: '.$e ->getMessage();
-            echo 'Usuario y/o contraseña inválidos';
+            echo "<p class='fail'>Usuario y / o contraseña inválidos</p>";
             session_start();
             session_destroy();
         }     
@@ -51,13 +51,12 @@
 
 	function validarInicio($sesion){
 		if($sesion == null || $sesion == ''){
-        echo "no ha iniciado sesion";
         //die(); //mata la aplicacion
         header('Location: ../index.php');
 	    }
 	}
 
-	//Regsitros
+	//Registros
 
 	//Clientes
 
@@ -65,10 +64,13 @@
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
 		$sql = "INSERT INTO clientes (cl_gc_cli,cl_tipo_cliente,cl_nom,cl_ap_pat,cl_ap_mat,cl_tel,cl_fac_a,cl_dir,cl_rfc) VALUES ('$id','$tipo','$nombres','$apPat','$apMat','$tel','$facta' ,'$dir','$rfc');";
 		if (mysqli_query($conn,$sql)) {
-			echo "Registro exitoso";
+			echo "<p class='exito'>Registro exitoso</p>";
 		}
 		else{
-			echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			//echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			echo "<p class='fail'>Error : ". mysqli_error($conn) . "</p>";
 		}
 	}
+
+	//Equipos
  ?>
