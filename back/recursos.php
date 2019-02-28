@@ -78,10 +78,10 @@
 		$resultado = mysqli_query($conn,$sql);
 		$res = $resultado->fetch_assoc();
 		$currentReg = $res['Último_registro'];
-		$ultimos3 = substr($currentReg, -3);
+		$ultimos4 = substr($currentReg, -4);
 		$primeros4 = substr($currentReg, 0,4);
 		//echo $primeros4;
-		printf($primeros4."%03d\n", $ultimos3+1);
+		printf($primeros4."%03d\n", $ultimos4+1);
 	}
 	//Equipos
  ?>

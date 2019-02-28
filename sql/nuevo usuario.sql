@@ -25,8 +25,9 @@ SELECT right(max(cl_gc_cli),3)+ '00' + 1 FROM clientes;
 
 select max(cl_gc_cli)+1 from clientes;
 
+#ejecutar cada 01/01/XXXX
 INSERT INTO clientes (cl_gc_cli,cl_tipo_cliente,cl_nom,cl_ap_pat,cl_ap_mat,cl_tel,cl_fac_a,cl_dir,cl_rfc)
-VALUES ('CI196','0','ABELARDO','AQUI','ARROYO','5578444332','','BENITO JUÁREZ','');
+VALUES ('CI190000','0','primer','año','de','00000000000','','operaciones','');
 
 #vaciar tabla
 TRUNCATE table CLIENTES;
