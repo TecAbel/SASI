@@ -62,7 +62,7 @@
             </div>
         </section>
     </main>
-
+    <br>
     <footer>
         <div>
             <h3 class="autor"><?php echo $autor;?> &copy; <?php echo $año?></h3>

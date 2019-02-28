@@ -71,6 +71,17 @@
 			echo "<p class='fail'>Error : ". mysqli_error($conn) . "</p>";
 		}
 	}
-
+	//obtener último cliente
+	function getUltimoCliente($contraseña, $usuario){
+		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$sql="SELECT max(cl_gc_cli) as Último_registro FROM clientes;";
+		$resultado = mysqli_query($conn,$sql);
+		$res = $resultado->fetch_assoc();
+		$currentReg = $res['Último_registro'];
+		$ultimos3 = substr($currentReg, -3);
+		$primeros4 = substr($currentReg, 0,4);
+		//echo $primeros4;
+		printf($primeros4."%03d\n", $ultimos3+1);
+	}
 	//Equipos
  ?>
