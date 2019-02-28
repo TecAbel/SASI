@@ -38,11 +38,11 @@ textarea{
     margin: auto;
     border-radius: 10px;
     height: 90px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
-input{
+/*input{
     text-transform: uppercase;
-}
+}*/
 footer div{
     background: #353535;
     color: white;

@@ -54,7 +54,7 @@
                 <div class="contenedorPrincipal">
                     <div class="contenedor izq">
                         <label for="gc_cli">Identificación: </label>
-                        <input type="text" id="gc_cli" name="txt_gc_cli" value='<?php getUltimoCliente($passSesion,$varsesion); ?>' readonly required>
+                        <input type="text" id="gc_cli" name="txt_gc_cli" value='<?php getUltimoRegistro($passSesion,$varsesion,'cl_gc_cli','clientes'); ?>' readonly required>
                         <br>
                         <label for="cl_tipo_cliente">Tipo de cliente:</label>
                         <select name="txt_cl_tipo_cliente" id="cl_tipo_cliente" required>

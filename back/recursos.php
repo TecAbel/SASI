@@ -60,9 +60,9 @@
 
 	//Clientes
 
-	function registroCliente($contraseña,$usuario,$id,$tipo,$nombres,$apPat,$apMat,$tel,$facta,$dir,$rfc){
+	function registroCliente($contraseña,$usuario,$gc,$tipo,$nombres,$apPat,$apMat,$tel,$facta,$dir,$rfc){
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
-		$sql = "INSERT INTO clientes (cl_gc_cli,cl_tipo_cliente,cl_nom,cl_ap_pat,cl_ap_mat,cl_tel,cl_fac_a,cl_dir,cl_rfc) VALUES ('$id','$tipo','$nombres','$apPat','$apMat','$tel','$facta' ,'$dir','$rfc');";
+		$sql = "INSERT INTO clientes (cl_gc_cli,cl_tipo_cliente,cl_nom,cl_ap_pat,cl_ap_mat,cl_tel,cl_fac_a,cl_dir,cl_rfc) VALUES ('$gc','$tipo','$nombres','$apPat','$apMat','$tel','$facta' ,'$dir','$rfc');";
 		if (mysqli_query($conn,$sql)) {
 			echo "<p class='exito'>Registro exitoso</p>";
 		}
@@ -71,17 +71,29 @@
 			echo "<p class='fail'>Error : ". mysqli_error($conn) . "</p>";
 		}
 	}
-	//obtener último cliente
-	function getUltimoCliente($contraseña, $usuario){
+	//obtener últimos registros
+	
+	function getUltimoRegistro($contraseña, $usuario,$gc,$tabla){
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
-		$sql="SELECT max(cl_gc_cli) as Último_registro FROM clientes;";
+		$sql="SELECT max($gc) as Último_registro FROM $tabla;";
 		$resultado = mysqli_query($conn,$sql);
 		$res = $resultado->fetch_assoc();
 		$currentReg = $res['Último_registro'];
 		$ultimos4 = substr($currentReg, -4);
 		$primeros4 = substr($currentReg, 0,4);
 		//echo $primeros4;
-		printf($primeros4."%03d\n", $ultimos4+1);
+		printf($primeros4."%04d\n", $ultimos4+1);
 	}
 	//Equipos
+	function registroEquipo($contraseña, $usuario,$gc_eq,$gc_cl,$eq_marca,$eq_modelo,$eq_procesador,$ram,$disco,$so,$so_lic,$bits,$so_act,$antivirus,$virus,$office,$office_lic,$notas){
+		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$sql = "INSERT INTO equipos VALUES('$gc_eq','$gc_cl','$eq_marca','$eq_modelo','$eq_procesador','$ram','$disco','$so','$so_lic','$bits','$so_act','$antivirus','$virus','$office','$office_lic','$notas');";
+		if (mysqli_query($conn,$sql)) {
+			echo "<p class='exito'>Registro exitoso</p>";
+		}
+		else{
+			//echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			echo "<p class='fail'>Error : ". mysqli_error($conn) . "</p>";
+		}
+	}
  ?>

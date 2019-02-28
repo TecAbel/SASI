@@ -29,9 +29,9 @@ create table equipos(
     eq_sis_ope char(20) not null,
     eq_sis_ope_lic char(30) null,
     eq_bits int(2) not null,
-    eq_act boolean,
+    eq_act boolean,/*1=activadas,0=desactivadas*/
     eq_ant_virus char(20) null,
-    eq_virus_ boolean,
+    eq_virus_ boolean,/*1=sí hay,0=no hay*/
     eq_office char(4) null,
     eq_lic_office char(30) null,
     eq_notas varchar(200) null
