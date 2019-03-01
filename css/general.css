@@ -48,10 +48,12 @@ footer div{
     color: white;
     margin: auto;
     border-radius: 10px;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
+    height: 100px;
+    padding-top: 5px;
+}
+footer div p{
+    text-align: center;
+    font-size: 80%;
 }
 
 .boton{

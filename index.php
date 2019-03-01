@@ -62,12 +62,12 @@
             </div>
         </section>
     </main>
-    <br>
     <footer>
         <div>
-            <h3 class="autor"><?php echo $autor;?> &copy; <?php echo $año?></h3>
+            <h3>Para: <?php echo $para; ?> &reg; </h3>
+            <p>Por: <?php echo $autor; ?> &copy; 2019</p>
         </div>
+        
     </footer>
-
 </body>
 </html>
