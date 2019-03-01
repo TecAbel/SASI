@@ -115,4 +115,16 @@
 			echo "<option>Sin resultados</option>";
 		}
 	}
+
+	function registroServicio($contraseña,$usuario,$gc_ser,$nombre_ser,$desc,$precio,$costo){
+		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$sql = "INSERT INTO servicios VALUES('$gc_ser','$nombre_ser','$desc','$precio','$costo');";
+		if (mysqli_query($conn,$sql)) {
+			echo "<p class='exito'>Registro exitoso</p>";
+		}
+		else{
+			//echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+			echo "<p class='fail'>Error : ". mysqli_error($conn) . "</p>";
+		}
+	}
  ?>

@@ -76,10 +76,10 @@
 	    				<input type="text" id="procesador" placeholder="Completo" name="txt_procesador" required>
 	    				<br>
 	    				<label for="ram">RAM: </label>
-	    				<input type="number" max="16" name="txt_ram" id="ram" placeholder="en GB" required>
+	    				<input type="number" max="16" min="1" name="txt_ram" id="ram" placeholder="en GB" required>
 	    				<br>
 	    				<label for="disco">Disco: </label>
-	    				<input type="number" max="2048" id="disco" placeholder="en GB" name="txt_disco" required>
+	    				<input type="number" min="1" max="2048" id="disco" placeholder="en GB" name="txt_disco" required>
 	    				<br>
 	    				<label >Sistema operativo: </label>
 	    				<select name="txt_so">

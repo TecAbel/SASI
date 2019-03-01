@@ -36,7 +36,7 @@
                 </div>
                 <div class="contenedor">
                     <div>
-                        <a href="">Registro de <br> servicios</a>
+                        <a href="frmServicios.php">Registro de <br> servicios</a>
                     </div>
                     <div>
                         <a href="">Registro de <br> Técnicos</a>
