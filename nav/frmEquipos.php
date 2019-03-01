@@ -61,8 +61,8 @@
 	    				<label for="num_eq">Número de equipo: </label>
 	    				<input type="text" name="txt_num_eq" id="num_eq" value="<?php getUltimoRegistro($passSesion,$varsesion,'eq_gc_equipo','equipos'); ?>" readonly required>
 	    				<br>
-	    				<label for="cliente">Id de cliente: </label>
-						<select name="txt_gc_cliente_s" id="cliente">
+	    				<label for="cliente">Nombre del cliente: </label>
+						<select name="txt_gc_cliente">
 							<?php getClientesCombo($passSesion,$varsesion) ;?>
 						</select>
 						<br>

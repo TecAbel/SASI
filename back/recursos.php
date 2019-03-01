@@ -99,14 +99,14 @@
 
 	function getClientesCombo($contraseña,$usuario){
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
-		$sql = "SELECT cl_gc_cli,cl_nom,cl_ap_pat FROM clientes;";
+		$sql = "SELECT cl_gc_cli,cl_nom,cl_ap_pat FROM clientes ORDER BY cl_nom asc;";
 		$resultado = mysqli_query($conn,$sql);
 		
 
 		if($resultado->num_rows>0){
 			
 			while($row=$resultado->fetch_array(MYSQLI_ASSOC)){
-				$combo .="<option value=". $row['cl_gc_cli'] .">". $row['cl_nom']." ". $row['cl_ap_pat'] ."</option>";
+				$combo .="<option value='". $row['cl_gc_cli'] ."'>". $row['cl_nom']." ". $row['cl_ap_pat'] ."</option>";
 				
 			}
 			echo $combo;
