@@ -59,19 +59,21 @@
 	    		<div class="contenedorPrincipal">
 	    			<div class="contenedor izq">
 	    				<label for="num_eq">Número de equipo: </label>
-	    				<input type="text" name="txt_num_eq" id="num_eq" value="<?php getUltimoRegistro($passSesion,$varsesion,'eq_gc_equipo','equipos'); ?>" required>
+	    				<input type="text" name="txt_num_eq" id="num_eq" value="<?php getUltimoRegistro($passSesion,$varsesion,'eq_gc_equipo','equipos'); ?>" readonly required>
 	    				<br>
 	    				<label for="cliente">Id de cliente: </label>
-	    				<input type="text" name="txt_gc_cliente" id="cliente" placeholder="CI19XXXX" required>
-	    				<br>
+						<select name="txt_gc_cliente_s" id="cliente">
+							<?php getClientesCombo($passSesion,$varsesion) ;?>
+						</select>
+						<br>
 	    				<label for="marca">Marca: </label>
-	    				<input type="text" name="txt_marca" id="marca" required>
+	    				<input type="text" name="txt_marca" id="marca" placeholder="necesario" required>
 	    				<br>
 	    				<label for="modelo">Modelo: </label>
-	    				<input type="text" name="txt_modelo" id="modelo" placeholder="CI19XXXX" required>
+	    				<input type="text" name="txt_modelo" id="modelo" placeholder="Necesario" required>
 	    				<br>
 	    				<label for="procesador">Procesador: </label>
-	    				<input type="text" id="procesador" placeholder="CI19XXXX" name="txt_procesador" required>
+	    				<input type="text" id="procesador" placeholder="Completo" name="txt_procesador" required>
 	    				<br>
 	    				<label for="ram">RAM: </label>
 	    				<input type="number" max="16" name="txt_ram" id="ram" placeholder="en GB" required>
