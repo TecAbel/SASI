@@ -62,6 +62,7 @@
 
 	function registroCliente($contraseña,$usuario,$gc,$tipo,$nombres,$apPat,$apMat,$tel,$facta,$dir,$rfc){
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$conn->set_charset('utf8');
 		$sql = "INSERT INTO clientes (cl_gc_cli,cl_tipo_cliente,cl_nom,cl_ap_pat,cl_ap_mat,cl_tel,cl_fac_a,cl_dir,cl_rfc) VALUES ('$gc','$tipo','$nombres','$apPat','$apMat','$tel','$facta' ,'$dir','$rfc');";
 		if (mysqli_query($conn,$sql)) {
 			echo "<p class='exito'>Registro exitoso</p>";
@@ -87,6 +88,7 @@
 	//Equipos
 	function registroEquipo($contraseña, $usuario,$gc_eq,$gc_cl,$eq_marca,$eq_modelo,$eq_procesador,$ram,$disco,$so,$so_lic,$bits,$so_act,$antivirus,$virus,$office,$office_lic,$notas){
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$conn->set_charset('utf8');
 		$sql = "INSERT INTO equipos VALUES('$gc_eq','$gc_cl','$eq_marca','$eq_modelo','$eq_procesador','$ram','$disco','$so','$so_lic','$bits','$so_act','$antivirus','$virus','$office','$office_lic','$notas');";
 		if (mysqli_query($conn,$sql)) {
 			echo "<p class='exito'>Registro exitoso</p>";
@@ -118,6 +120,7 @@
 
 	function registroServicio($contraseña,$usuario,$gc_ser,$nombre_ser,$desc,$precio,$costo){
 		$conn = mysqli_connect($servidor, $usuario, $contraseña, $GLOBALS['base']);
+		$conn->set_charset('utf8');
 		$sql = "INSERT INTO servicios VALUES('$gc_ser','$nombre_ser','$desc','$precio','$costo');";
 		if (mysqli_query($conn,$sql)) {
 			echo "<p class='exito'>Registro exitoso</p>";

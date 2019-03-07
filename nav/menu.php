@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SASI | Menú</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="../css/general.css">
@@ -39,7 +40,7 @@
                         <a href="frmServicios.php">Registro de <br> servicios</a>
                     </div>
                     <div>
-                        <a href="">Registro de <br> Técnicos</a>
+                        <a href="frmTecnicos">Registro de <br> Técnicos</a>
                     </div>
                     <div>
                         <a href="">Registro de <br> Ticket</a>
