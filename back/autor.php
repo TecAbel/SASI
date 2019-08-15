@@ -1,5 +1,5 @@
 <?php
     $autor = "Abelardo Aqui";
-    $para = "Grupo Columbia";
+    $para = "T&T";
     $año = "2019";
 ?>
